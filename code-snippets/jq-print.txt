@@ -1,0 +1,4 @@
+	jQuery(".printShowSummary").click(function(){
+			window.print();
+			return false;
+		});
