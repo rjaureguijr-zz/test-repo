@@ -1,0 +1,19 @@
+
+####################
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>The Pampered Chef&reg;</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+@viewport{
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: device-width;
+}
+
+
+-webkit-text-size-adjust: none;

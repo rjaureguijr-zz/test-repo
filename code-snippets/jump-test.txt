@@ -1,0 +1,301 @@
+<%@ taglib uri="/logic.tld" prefix="tpclogic" %>
+<link href="/inc/reset.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#container {
+	border-bottom:2px solid #b8c3eb;
+	font:12px/18px Verdana, Arial, Helvetica, sans-serif;
+	margin:12px auto 25px!important;
+	text-align: left;
+	width: 750px;
+}
+#container #top {
+	color:#7288d8!important;
+	font:normal 10px/18px Verdana, Arial, Helvetica, sans-serif!important;
+	text-align:right;
+	margin:0 0 5px 0;
+	padding:0 7px 0 0;
+}
+#container #top a:link, #container #top a:visited, #container #top a:active {
+	color:#7288d8!important;
+	font:normal 10px/18px Verdana, Arial, Helvetica, sans-serif!important;
+	text-decoration:none;
+}
+#container #top a:hover {
+	color:#b8c3eb!important;
+	font:normal 10px/18px Verdana, Arial, Helvetica, sans-serif!important;
+	text-decoration:underline!important;
+}
+
+#container h3 {
+	color:#7288d8;
+	font:bold 24px/120% Arial, Helvetica, sans-serif;
+}
+.ctSection {
+	padding:22px 20px 12px 10px;
+	background:url(/images/cc/uk/corp_training_11/bar_div.gif) no-repeat left bottom;
+}
+.lastSection {
+	background:none!important;
+	border-bottom:7px solid #7288d8!important;
+	margin-bottom:1px;
+}
+.ctSection p {
+	margin:0 0 22px 0;
+	padding:0;
+}
+.ctSection img.lrgImg {
+	float:right;
+}
+.ctSection a:link, .ctSection a:visited, .ctSection a:active {
+	color:#7288d8!important;
+	text-decoration:none;
+}
+.ctSection ul {
+	list-style:disc;
+	margin:0 0 0 10px;
+	padding:0 0 0 30px;
+}
+.ctSection a:hover {
+	color:#7288d8!important;
+	text-decoration:underline;
+}
+a.scroll:link, a.scroll:visited, a.scroll:active {
+	background:url(/images/cc/uk/corp_training_11/arrow.gif) no-repeat left 67%;
+	color:#7288d8!important;
+	font:normal 11px/18px Verdana, Arial, Helvetica, sans-serif;
+	padding: 0 0 0 20px;
+	text-decoration:none;
+	display: block;
+	float: right;
+	margin-bottom: 10px;
+	margin-top:10px;
+	width: 76px;
+}
+a.scroll:hover {
+	text-decoration:underline;
+}
+.buttonCheckList {
+	display:block;
+	text-indent:-9999px;
+	height:29px;
+	width:123px;
+}
+.selectedSide {
+	background:url(/images/cc/uk/corp_training_11/reg_btn.gif) no-repeat left bottom;
+	padding-left:15px;
+}
+.selectedDown {
+	background:url(/images/cc/uk/corp_training_11/reg_up_btn.gif) no-repeat left bottom;
+	padding-left:15px;
+}
+.regTable {
+	border:1px solid #95a6e2;
+	border-collapse:collapse;
+}
+.regTable thead {
+	background:#7288d8;
+	text-align:left;
+	font:bold 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.regTable th {
+	color:#fff!important;
+}
+.regTable th, .regTable td {
+	padding:6px 0 7px 9px;
+}
+.regTable .odd {
+	background:#d4daf1;
+}
+</style>
+<!--[if lte IE 8]>
+<style type="text/css">
+a.scroll:link, a.scroll:visited, a.scroll:active{padding: 0px 0 0 20px;
+	text-decoration:none;
+	display: block;
+	float: right;
+	margin-bottom: 10px;
+	margin-top:10px;width:110px;
+   clear:both;}
+</style>
+<![endif]-->
+<div id="container">
+  <div id="top"><%--<a href="#dfm" class="scrollSection">Director Focus Meetings</a>&nbsp;|&nbsp;--%><a href="#nds" class="scrollSection">New Director Seminars</a>&nbsp;|&nbsp;<a href="#ndrd" class="scrollSection">New Director Review Days</a>&nbsp;</div>
+  <h1><img src="/images/cc/uk/corp_training_11/hdr.gif" alt="Corporate Training - 2011" width="746" height="47" /></h1>  
+  <%--<div id="dfm" class="ctSection"><img class="lrgImg" src="/images/cc/uk/corp_training_11/img2.jpg" />
+    <h3>Director Focus Meetings</h3>
+    <p>Enjoy the chance to network with other Directors and brainstorm ideas, hear about business developments from the UK sales team, and be motivated and inspired to lead your team towards a successful 2011.</p>
+    <p>Meetings will cost &pound;10 to attend, which covers lunch and tea/coffee.</p>
+    <p><strong>9.30am:</strong> Tea and coffee<br />
+      <strong>10am:</strong> Start<br />
+      <strong>3pm:</strong> Finish</p>
+    <div class="clearfloat"></div>
+    <div><a href="#" class="buttonCheckList selectedSide btn">To Register</a>
+      <div class="test" style="display:none;border:1px solid #7288d8; padding:9px;">
+        <p>Please e-mail <a href="mailto:patricia_priest@pamperedchef.co.uk">patricia_priest@pamperedchef.co.uk</a> with the date and venue of the meeting you wish to&nbsp;attend.</p>
+        <p>Payment will be required on the day.</p>
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" class="regTable reg2">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01-Mar</td>
+              <td>Newport Pagnell</td>
+              <td>Holiday Inn, London Road, Newport Pagnell MK16 0JA</td>
+            </tr>
+            <tr>
+              <td>01-Mar</td>
+              <td>Dundee</td>
+              <td>Discovery Point, Discovery Quay, Riverside Drive, Dundee DD1 4XA</td>
+            </tr>
+            <tr>
+              <td>01-Mar</td>
+              <td>Birmingham</td>
+              <td>Crowne Plaza, Pendigo Way, NEC Birmingham  B40 1PS</td>
+            </tr>
+            <tr>
+              <td>01-Mar</td>
+              <td>Ireland</td>
+              <td>Park Plaza, Belfast International Airport, Belfast BT29 4ZY</td>
+            </tr>
+            <tr>
+              <td>02-Mar</td>
+              <td>Dartford</td>
+              <td>Campanile 1 Clipper Blvd, Crossways Business Park, Dartford Kent, Kent DA2 6QN</td>
+            </tr>
+            <tr>
+              <td>02-Mar</td>
+              <td>Taunton</td>
+              <td>Holiday Inn, Deane Gate Avenue, Taunton TA1 2UA</td>
+            </tr>
+            <tr>
+              <td>02-Mar</td>
+              <td>Ascot</td>
+              <td>Englemere, The White House, Englemere, Kings Ride, Ascot SL5 7JR</td>
+            </tr>
+            <tr>
+              <td>03-Mar</td>
+              <td>Bury St Edmunds</td>
+              <td>The Angel 3 Angel Hill, Bury St Edmunds, Suffolk, IP33 1LT</td>
+            </tr>
+            <tr>
+              <td>03-Mar</td>
+              <td>Bradford</td>
+              <td>Woodlands, Gelderd Road, Leeds, LS27 7LY</td>
+            </tr>
+            <tr>
+              <td>13-Sep</td>
+              <td>Newport Pagnell</td>
+              <td>Holiday Inn, London Road, Newport Pagnell MK16 0JA</td>
+            </tr>
+            <tr>
+              <td>13-Sep</td>
+              <td>Dundee</td>
+              <td>Discovery Point, Discovery Quay, Riverside Drive, Dundee DD1 4XA</td>
+            </tr>
+            <tr>
+              <td>13-Sep</td>
+              <td>Birmingham</td>
+              <td>Crowne Plaza, Pendigo Way, NEC Birmingham  B40 1PS</td>
+            </tr>
+            <tr>
+              <td>13-Sep</td>
+              <td>Taunton</td>
+              <td>Holiday Inn, Deane Gate Avenue, Taunton TA1 2UA</td>
+            </tr>
+            <tr>
+              <td>14-Sep</td>
+              <td>Dartford</td>
+              <td>Campanile 1 Clipper Blvd, Crossways Business Park, Dartford Kent, Kent DA2 6QN</td>
+            </tr>
+            <tr>
+              <td>14-Sep</td>
+              <td>Ascot</td>
+              <td>Englemere, The White House, Englemere, Kings Ride, Ascot SL5 7JR</td>
+            </tr>
+            <tr>
+              <td>15-Sep</td>
+              <td>Bury</td>
+              <td>The Angel 3 Angel Hill, Bury St Edmunds, Suffolk, IP33 1LT</td>
+            </tr>
+            <tr>
+              <td>15-Sep</td>
+              <td>Bradford</td>
+              <td>Woodlands, Gelderd Road, Leeds, LS27 7LY</td>
+            </tr>
+            <tr>
+              <td>15-Sep</td>
+              <td>Ireland</td>
+              <td>Park Plaza, Belfast International Airport, Belfast BT29 4ZY</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <a href="#top" class="scroll">Back to top</a>
+    <div class="clearfloat"></div>
+  </div>--%>
+  <div id="nds" class="ctSection"><img class="lrgImg" src="/images/cc/uk/corp_training_11/img3.jpg" />
+    <h3>New Director Seminars</h3>
+    <p>When you promote to Director, you will be invited by the UK sales team to attend a New Director Seminar. These are an excellent opportunity to network with other new Directors, share team-building tips and receive some business-building training from the UK sales team.</p>
+    <p>All New Director Seminars will be held at the same venue on the following dates:</p>
+    <p>Crowne Plaza, Pendigo Way, NEC Birmingham, B40 1PS</p>
+    <ul>
+      <li>16-17 February</li>
+      <li>12-13 April</li>
+      <li>6-7 June</li>
+      <li>21-22 September</li>
+      <li>9-10 November</li>
+    </ul>
+    </p>
+    <div class="clearfloat"></div>
+    <a href="#top" class="scroll">Back to top</a>
+    <div class="clearfloat"></div>
+  </div>
+  <div id="ndrd" class="ctSection lastSection"><img class="lrgImg" src="/images/cc/uk/corp_training_11/img4.jpg" />
+    <h3>New Director Review Days</h3>
+    <p>As a new Director, you will have already learned lots of tips, ideas and skills to help you run and develop your business and work with the people in it &ndash; the review day is aimed to help you fine tune your own personal business, your team and its productivity.</p>
+    <p>It is a one day course and is open to all Directors who have promoted out within the last 18 months, and is designed as a follow on course to the New Director Seminar. The course is free but does not include lunch.</p>
+    <p>All New Director Review Days will be held at the same venue on the following dates:</p>
+    <p>Crowne Plaza, Pendigo Way, NEC Birmingham, B40 1PS</p>
+    <ul>
+      <li>9 June</li>
+      <li>20 September</li>
+      <li>8 November</li>
+    </ul>
+    <div class="clearfloat"></div>
+    <a href="#top" class="scroll">Back to top</a>
+    <div class="clearfloat"></div>
+  </div>
+  
+</div><img src="/images/cc/uk/corp_training_11/reg_up_btn.gif" width="1" height="1" />
+<script type="text/javascript">
+jQuery(document).ready(function($){	
+$(".btn").hover(function(){
+$(this).stop().fadeTo(100, .60).fadeTo("slow", 1);}, function(){});
+$(".btn2").hover(function(){
+$(this).stop().fadeTo(100, .75).fadeTo("slow", 1);}, function(){});
+$(".reg1 tbody tr:odd, .reg2 tbody tr:odd").addClass("odd");
+//scroll function
+$(".scroll").click(function(){
+$('html, body').animate({ scrollTop: $("#top").offset().top }, "fast");return false;}
+);
+//scroll function
+$(".scrollSection").click(function(){
+var imgHref = $(this).attr('href');
+$('html, body').animate({ scrollTop: $(imgHref).offset().top }, "normal");return false;}
+);
+});$(function(){
+		$(".buttonCheckList").toggle(
+			function() {
+				$(this).next().show("slow");
+				$(this).removeClass("selectedSide").addClass("selectedDown");
+			},
+			function() {
+				$(this).next().hide("slow");
+				$(this).removeClass("selectedDown").addClass("selectedSide");
+			});});</script>
