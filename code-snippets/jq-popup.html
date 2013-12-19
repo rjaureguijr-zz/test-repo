@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+<p>Links will force open in a new window, not a new tab. This is per a class of wm_popup added to a link.</p>
+<h3>Click links below.</h3>
+<p><a class="wm_popup" href="http://google.com" target="_blank">Link test in new window</a> <span style="font-size:1.20em; line-height:0.8em; color:#0991c1;">&raquo;</span><br />
+  (link opens in a seperate new window)</p>
+<p><a class="wm_popup" href="http://netmag.co.uk" target="_blank">Link test in new window</a> <span style="font-size:1.20em; line-height:0.8em; color:#0991c1;">&raquo;</span><br />
+  (link opens in a seperate new window)</p>
+<p><a class="wm_popup" href="http://twitter.com" target="_blank">Link test in new window</a> <span style="font-size:1.20em; line-height:0.8em; color:#0991c1;">&raquo;</span><br />
+  (link opens in a seperate new window)</p>
+<p><a class="wm_popup" href="http://bing.com" target="_blank">Link test in new window</a> <span style="font-size:1.20em; line-height:0.8em; color:#0991c1;">&raquo;</span><br />
+  (link opens in a seperate new window)</p>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.wm_popup').click(function(event){
+	   var alertText =  $(this).prop('href');
+	   alert(alertText);/**/
+	var NWin = window.open($(this).prop('href'), '', 'height=800,width=800,menubar=yes,toolbar=yes,resizable=yes,location=yes' );
+     if(window.focus){
+		 NWin.focus();
+		 }
+	event.preventDefault();
+   });
+});
+</script>
+</div>
+</body>
+</html>
