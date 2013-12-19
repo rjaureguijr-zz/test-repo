@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>.net mobile email tutorial</title>
+
+	<style type="text/css">
+		/* Outlook link fix */
+		#outlook a {padding:0;}
+		/* Hotmail background & line height fixes */
+		.ExternalClass {width:100% !important;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,
+		.ExternalClass td, .ExternalClass div {line-height: 100%;}
+		/* Image borders & formatting */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;} 
+		a img {border:none;} 
+		/* Re-style iPhone automatic links (eg. phone numbers) */
+		.applelinks a {color:#222222; text-decoration: none;}
+		/* Hotmail symbol fix for mobile devices */
+		.ExternalClass img[class^=Emoji] { width: 10px !important; height: 10px !important; display: inline !important; } 
+		
+		
+		/* Media Query for mobile */
+		
+		@media screen and (max-width: 480px) {	
+		
+		/* This resizes tables and images to be 100% wide with a proportionate width */
+		table[class=emailwrapto100pc], img[class=emailwrapto100pc]{width:100% !important; height:auto !important;}
+		
+		/* Hide stuff on mobiles */
+		table[class=emailnomob],td[class=emailnomob],img[class=emailnomob],span[class=emailnomob]{display:none !important;}
+		
+		td[class=emailcolsplit]{width:100%!important; float:left!important;}
+		
+		a[class=emailmobbutton]{display:block !important;font-size:14px !important; font-weight:bold !important; padding:6px 4px 8px 4px !important; line-height:18px !important; background:#dddddd !important; border-radius:5px !important; margin:10px auto;width:70%; text-align:center; color:#111 !important; text-decoration:none; text-shadow:#fff 1px 0 0 ;}
+
+		/* This resizes body text for mobiles */
+		span[class=emailbodytext],a[class=emailbodytext]{font-size:16px !important; line-height:21px !important;}
+		span[class=emailh2],a[class=emailh2]{font-size:22px !important; line-height:26px !important;}
+		
+		}
+		
+		/* Additional Media Query for tablets */
+		
+		@media screen and (min-width: 480px) and (max-width: 1024px) {
+		
+		/* Same as above */
+		table[class=emailwrapto100pc], img[class=emailwrapto100pc]{width:100% !important; height:auto !important;}
+		/* Hide stuff on tablets */
+		table[class=emailnomob],td[class=emailnomob],img[class=emailnomob],span[class=emailnomob]{display:none !important;}
+		
+		/* Same as above - make the text larger on a tablet*/
+		span[class=emailbodytext],a[class=emailbodytext]{font-size:16px !important; line-height:21px !important;}
+		span[class=emailh2],a[class=emailh2]{font-size:22px !important; line-height:26px !important;}
+		
+		 /*Same as above - make links into buttons*/
+		a[class=emailmobbutton]{display:block !important;font-size:14px !important; font-weight:bold !important; padding:6px 4px 8px 4px !important; line-height:18px !important; background:#dddddd !important; border-radius:5px !important; margin:10px auto;width:70%; text-align:center; color:#111 !important; text-decoration:none; text-shadow:#fff 1px 0 0 ;}
+
+}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body style="padding:0; margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:100%; background-image:url(bg.gif); background-color:#111111;" bgcolor="#111111" background="bg.gif">
+
+<!--there's an extra wrapper table here - this allows us to set the page background in webmail clients (where the body tag is ignored) -->
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%" bgcolor="#111111" background="bg.gif">
+
+  <tr>
+
+    <td align="center" valign="top">
+
+    <!--Link to the hosted html version - we'll hide this for mobile-->
+    <table border="0" cellspacing="0" cellpadding="0" class="emailnomob">
+  <tr>
+    <td align="center" style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;"><a href="#" style="font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#ffffff">View this email online</a></td>
+  </tr>
+</table>
+    
+    <!--table containg the main email - this will resize for mobile-->
+    	
+        <table width="640" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
+  			<tr>
+    			<td bgcolor="#FFFFFF">
+             
+             <!--An image that resizes. For the purposes of this demo we've made the image 1280 x 400 so it looks ok on tablets - if you take the tablet stuff out you can make this normal size -->
+                
+                <img height="200" width="640" border="0" src="header.gif" style="display: block;" class="emailwrapto100pc" />
+                
+                <!--Block of intro copy -->
+                
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;"><span class="emailbodytext" style="font-size:12px; font-family:Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur porta dapibus. Nunc lobortis urna vel neque faucibus semper. Morbi mauris erat, fermentum ut dictum id, fringilla imperdiet risus.</span></td>
+  </tr>
+</table>
+				
+                <!--Start of the two column table -->
+                
+<table border="0" cellspacing="0" cellpadding="0" width="640" class="emailwrapto100pc">
+	<tr>
+		<td class="emailcolsplit" align="center" valign="top" width="320">
+        
+        <!--Start of the first column -->
+        
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td style="padding-left:10px;padding-right:10px;"><img height="150" width="300" border="0" src="article1.jpg" style="display: block;" class="emailwrapto100pc" /></td>
+  </tr>
+</table>
+			
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td style="padding-top:20px;padding-left:10px;padding-right:10px;"><span class="emailh2" style="font-size:14px; font-family:Arial, Helvetica, sans-serif;">Headline One</span></td>
+  </tr>
+  <tr>
+    <td style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:10px;"><span class="emailbodytext" style="font-size:12px; font-family:Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur porta dapibus. Nunc lobortis urna vel neque faucibus semper. Morbi mauris erat, fermentum ut dictum id, fringilla imperdiet risus. Pellentesque egestas lacinia mauris, ut lobortis leo aliquet at. Aliquam pretium dictum risus, vitae convallis ipsum cursus id. Donec lectus nisi, elementum tincidunt luctus vel, bibendum quis lorem. </span></td>
+  </tr>
+</table>
+		
+			
+		</td>
+		<td class="emailcolsplit" align="center" valign="top" width="320">
+        
+        <!--Start of the second column -->
+        
+        
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td style="padding-left:10px;padding-right:10px;"><img height="150" width="300" border="0" src="article2.jpg" style="display: block;" class="emailwrapto100pc" /></td>
+  </tr>
+</table>			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			  <tr>
+			    <td style="padding-top:20px;padding-left:10px;padding-right:10px;"><span class="emailh2" style="font-size:14px; font-family:Arial, Helvetica, sans-serif;">Headline Two</span></td>
+			    </tr>
+			  <tr>
+			    <td style="padding-top:20px; padding-bottom:20px;padding-left:10px;padding-right:10px;"><span class="emailbodytext" style="font-size:12px; font-family:Arial, Helvetica, sans-serif;">Donec eu diam quis lorem volutpat accumsan a et dolor. Nam ultricies, diam a dapibus tempor, orci augue mattis ante, imperdiet scelerisque felis ante cursus erat. Nunc fringilla, felis eget viverra pharetra, mauris neque eleifend libero, vel condimentum purus lacus eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse tempor sagittis tellus, ut facilisis nunc rutrum et.</span></td>
+			    </tr>
+			  </table></td>
+	</tr>
+</table>
+
+
+<!-- The navigation at the bottom of the email -->
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td align="center" style="padding-bottom:20px;"><a href="#" class="emailmobbutton" style="font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#990000">Our Website</a>
+<span class="emailnomob"> | </span>
+<a href="#" class="emailmobbutton" style="font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#990000">Products</a>
+<span class="emailnomob"> | </span>
+<a href="#" class="emailmobbutton" style="font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#990000">Contact Us</a></td>
+  </tr>
+</table>
+
+
+
+                </td>
+            </tr>
+        </table>
+        
+     </td>
+  </tr>
+</table>
+                
+
+</body>
+</html>
