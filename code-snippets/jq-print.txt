@@ -1,4 +1,4 @@
-	jQuery(".printShowSummary").click(function(){
-			window.print();
-			return false;
-		});
+jQuery('.printPage').on('click', function(e){
+	window.print();
+	e.preventDefault();
+});
